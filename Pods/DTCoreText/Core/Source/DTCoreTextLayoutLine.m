@@ -352,10 +352,10 @@
 					CTRunRef oneRun = CFArrayGetValueAtIndex(runs, i);
 					
 					// assumption: position of first glyph is also the correct offset of the entire run
-					CGPoint position = *CTRunGetPositionsPtr(oneRun);
+					//CGPoint position = *CTRunGetPositionsPtr(oneRun);
 					
-					DTCoreTextGlyphRun *glyphRun = [[DTCoreTextGlyphRun alloc] initWithRun:oneRun layoutLine:self offset:position.x];
-					[tmpArray addObject:glyphRun];
+					//DTCoreTextGlyphRun *glyphRun = [[DTCoreTextGlyphRun alloc] initWithRun:oneRun layoutLine:self offset:position.x];
+					//[tmpArray addObject:glyphRun];
 				}
 				
 				_glyphRuns = tmpArray;
